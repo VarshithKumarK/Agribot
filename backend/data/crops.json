@@ -1,0 +1,15 @@
+{
+    "tomato": {
+      "description": "Tomato is a warm-season crop requiring 70–80 days to harvest.",
+      "climate": "Warm, 20–25°C is ideal.",
+      "soil": "Loamy, well-drained, pH 6.0–7.0.",
+      "pests": "Fruit borer, whiteflies, aphids"
+    },
+    "wheat": {
+      "description": "Wheat is a winter cereal crop sown in rabi season.",
+      "climate": "Cool, 10–15°C during growth.",
+      "soil": "Clay loam or loamy soil, well-drained.",
+      "pests": "Rusts, aphids, termites"
+    }
+  }
+  

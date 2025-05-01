@@ -5,13 +5,14 @@ import { connectDB } from "./config/db.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import authRoutes from "./routes/authRoute.js";
-import voiceRoutes from "./routes/voiceRoute.js"
+import voiceRoutes from "./routes/voiceRoute.js";
+import webhookRoutes from "./routes/webhookRoute.js";
 const app = express();
 
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/uploads",express.static('uploads'));
+app.use("/uploads", express.static("uploads"));
 app.use(
   cors({
     origin: "http://localhost:5173", // Frontend URL
@@ -19,8 +20,9 @@ app.use(
   })
 );
 
-app.use('/api/voice',voiceRoutes);
+app.use("/api/voice", voiceRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/dialogflow", webhookRoutes);
 
 const PORT = process.env.PORT || 5000;
 

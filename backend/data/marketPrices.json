@@ -1,0 +1,18 @@
+{
+  "wheat": {
+    "price": "₹2100 per quintal",
+    "market": "Delhi Mandi"
+  },
+  "rice": {
+    "price": "₹2300 per quintal",
+    "market": "Nagpur Mandi"
+  },
+  "tomato": {
+    "price": "₹1200 per quintal",
+    "market": "Bangalore Mandi"
+  },
+  "onion": {
+    "price": "₹900 per quintal",
+    "market": "Mumbai Mandi"
+  }
+}
