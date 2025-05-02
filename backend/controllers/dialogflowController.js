@@ -26,9 +26,9 @@ export const handleVoiceQuery = async (req, res) => {
     const [response] = await sessionClient.detectIntent(request);
     const result = response.queryResult;
     //console.log(JSON.stringify(req.body, null, 2));
-    console.log("Intent matched:", result.intent.displayName);
-    console.log("Detected parameters:", result.parameters?.fields);
-    console.log("Dialogflow fulfillment text:", result.fulfillmentText);
+    // console.log("Intent matched:", result.intent.displayName);
+    // console.log("Detected parameters:", result.parameters?.fields);
+    // console.log("Dialogflow fulfillment text:", result.fulfillmentText);
 
     await Query.create({
       sessionId,

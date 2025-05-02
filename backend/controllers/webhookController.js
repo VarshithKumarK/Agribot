@@ -86,10 +86,10 @@ export const handleWebhook = async (req, res) => {
   }
 
   if (intent === "get_market_price") {
-    const cropName = parameters["crop-name"]?.toLowerCase();
+    const cropName = parameters["crop-name"]?.toLowerCase().trim();
     const response = getMarketPrice(cropName);
-    console.log("Resolved crop price:", cropName, response);
-    console.log("Intent:", intent);
+    //console.log("Resolved crop price:", cropName, response);
+    //console.log("Intent:", intent);
     return res.json({ fulfillmentText: response });
   }
 
