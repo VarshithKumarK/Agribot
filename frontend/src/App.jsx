@@ -8,8 +8,8 @@ import Login from "./Pages/Login";
 import ChatBot from "./Pages/ChatBot";
 import Profile from "./Pages/Profile";
 import Navbar from "./components/Navbar";
-import QueryTable from "./components/QueryTable";
 import Home from "./Pages/Home";
+import Query from "./Pages/Query";
 function App() {
   return (
     <AuthProvider>
@@ -20,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/query" element={<Query />} />
           <Route path="/chatbot" element={<ChatBot />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>

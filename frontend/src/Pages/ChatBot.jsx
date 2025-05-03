@@ -1,12 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import axios from "axios";
-
+import { AuthContext } from "../context/AuthContext";
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
-
+  const { user } = useContext(AuthContext);
   const handleSendText = async (query) => {
     const userMsg = { from: "user", text: query };
     setMessages((prev) => [...prev, userMsg]);
@@ -20,6 +20,19 @@ const ChatBot = () => {
       window.speechSynthesis.speak(
         new SpeechSynthesisUtterance(res.data.response)
       );
+      if (user) {
+        await axios.post(
+          "http://localhost:5000/api/query/save",
+          {
+            question: query,
+            intent: res.data.intent || "General",
+            response: res.data.response,
+          },
+          {
+            withCredentials: true,
+          }
+        );
+      }
     } catch (err) {
       console.error(err);
     }
@@ -64,7 +77,6 @@ const ChatBot = () => {
     recognition.onerror = (event) => {
       console.error("Speech recognition error:", event.error);
       setListening(false);
-      
     };
 
     recognition.onend = () => {
@@ -82,8 +94,8 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="min-h-screen bg-green-100 p-4 flex flex-col items-center font-sans">
-      <h1 className="text-3xl font-bold text-green-800 mb-4">
+    <div className="min-h-screen  bg-green-100 p-4 flex flex-col items-center font-sans">
+      <h1 className="text-3xl font-bold mt-15 text-green-800 mb-4">
         AgriBot - Voice & Text Assistant
       </h1>
 

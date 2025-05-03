@@ -30,12 +30,7 @@ export const handleVoiceQuery = async (req, res) => {
     // console.log("Detected parameters:", result.parameters?.fields);
     // console.log("Dialogflow fulfillment text:", result.fulfillmentText);
 
-    await Query.create({
-      sessionId,
-      question: query,
-      intent: result.intent.displayName,
-      response: result.fulfillmentText,
-    });
+   
 
     res.json({
       intent: result.intent.displayName,

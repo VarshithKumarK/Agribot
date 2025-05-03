@@ -24,12 +24,6 @@ const userSchema = mongoose.Schema(
       enum: ["user", "admin"],
       default: "user",
     },
-    favorites: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Music",
-      },
-    ],
   },
   {
     timestamps: true,
