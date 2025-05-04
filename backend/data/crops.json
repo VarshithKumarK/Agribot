@@ -118,7 +118,7 @@
     "climate": "Warm and humid, 26–30°C with 100–200 cm rainfall.",
     "soil": "Fertile, well-drained loamy soil.",
     "pests": "Banana weevil, nematodes, aphids"
-  }
+  },
 
     "tomato": {
       "description": "Tomato is a warm-season crop requiring 70–80 days to harvest.",
@@ -131,7 +131,7 @@
       "climate": "Cool, 10–15°C during growth.",
       "soil": "Clay loam or loamy soil, well-drained.",
       "pests": "Rusts, aphids, termites"
-    }
+    },
         
   "apple": {
     "description": "Apple is a temperate fruit crop grown for its sweet and crisp fruits.",
@@ -277,12 +277,6 @@
     "soil": "Loamy soil, well-drained.",
     "pests": "Aphids, leaf miners, downy mildew"
   },
-  "cabbage": {
-    "description": "Cabbage is a cool-season leafy vegetable.",
-    "climate": "Cool, 15–20°C with moderate rainfall.",
-    "soil": "Loamy soil, well-drained.",
-    "pests": "Cabbage worm, aphids, black rot"
-  },
   "cauliflower": {
     "description": "Cauliflower is a cool-season vegetable crop.",
     "climate": "Cool, 15–20°C with moderate rainfall.",
@@ -318,8 +312,8 @@
     "climate": "Warm, 20–30°C with moderate rainfall.",
     "soil": "Sandy loam, well-drained.",
     "pests": "Aphids, pod borer, leaf spot"
+  },
   
-{
   "asparagus": {
     "description": "Asparagus is a perennial vegetable crop known for its tender shoots.",
     "climate": "Temperate, 15–25°C with full sun.",
@@ -477,4 +471,3 @@
     "pests": "Carrot fly, aphids, root-knot nematodes"
   }
 }  
-}
