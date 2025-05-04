@@ -1,4 +1,125 @@
 {
+  "rice": {
+    "description": "Rice is a staple food crop grown primarily in Kharif season.",
+    "climate": "Warm and humid, above 25°C with rainfall over 100 cm.",
+    "soil": "Clayey or loamy soil, well-drained.",
+    "pests": "Stem borers, leaf folders, brown planthopper"
+  },
+  "maize": {
+    "description": "Maize is a versatile cereal crop used for food and fodder.",
+    "climate": "Warm, 21–27°C with moderate rainfall.",
+    "soil": "Well-drained alluvial or loamy soil.",
+    "pests": "Stem borers, armyworms, aphids"
+  },
+  "millet": {
+    "description": "Millets are drought-resistant cereals grown in arid regions.",
+    "climate": "Warm, 25–30°C with low to moderate rainfall.",
+    "soil": "Sandy or loamy soils, well-drained.",
+    "pests": "Shoot fly, stem borer, aphids"
+  },
+  "sugarcane": {
+    "description": "Sugarcane is a tropical crop used for sugar production.",
+    "climate": "Hot and humid, 20–35°C with rainfall 85–165 cm.",
+    "soil": "Well-drained alluvial, black, or red soils.",
+    "pests": "Early shoot borer, top borer, white grub"
+  },
+  "cotton": {
+    "description": "Cotton is a fiber crop grown in Kharif season.",
+    "climate": "Warm, 21–30°C with 50–100 cm rainfall.",
+    "soil": "Black cotton soil, well-drained.",
+    "pests": "Bollworms, aphids, whiteflies"
+  },
+  "jute": {
+    "description": "Jute is a fiber crop known as 'golden fiber'.",
+    "climate": "Warm and humid, 25–35°C with 150–250 cm rainfall.",
+    "soil": "Well-drained alluvial soil.",
+    "pests": "Stem weevil, root knot nematode"
+  },
+  "tea": {
+    "description": "Tea is a plantation crop grown in hilly regions.",
+    "climate": "Cool to warm, 20–30°C with 150–300 cm rainfall.",
+    "soil": "Loamy soil, acidic and rich in organic matter.",
+    "pests": "Tea mosquito bug, red spider mite"
+  },
+  "coffee": {
+    "description": "Coffee is a plantation crop grown in shaded areas.",
+    "climate": "Cool, 15–28°C with 125–225 cm rainfall.",
+    "soil": "Well-drained forest loam soil.",
+    "pests": "Coffee borer beetle, mealybugs"
+  },
+  "groundnut": {
+    "description": "Groundnut is an oilseed crop grown in Kharif season.",
+    "climate": "Warm, 20–30°C with 50–75 cm rainfall.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Leaf miner, aphids, white grub"
+  },
+  "soybean": {
+    "description": "Soybean is a major oilseed and protein-rich crop.",
+    "climate": "Warm, 20–30°C with 60–100 cm rainfall.",
+    "soil": "Well-drained loamy soil.",
+    "pests": "Stem fly, pod borer, aphids"
+  },
+  "mustard": {
+    "description": "Mustard is a rabi oilseed crop grown in cooler climates.",
+    "climate": "Cool, 10–25°C with 25–40 cm rainfall.",
+    "soil": "Loamy or sandy loam soil, well-drained.",
+    "pests": "Aphids, painted bug, sawfly"
+  },
+  "barley": {
+    "description": "Barley is a cereal crop grown in rabi season.",
+    "climate": "Cool, 12–25°C with 30–40 cm rainfall.",
+    "soil": "Light to medium loam, well-drained.",
+    "pests": "Aphids, armyworms, root aphids"
+  },
+  "sorghum": {
+    "description": "Sorghum is a drought-tolerant cereal crop.",
+    "climate": "Warm, 25–30°C with 40–50 cm rainfall.",
+    "soil": "Sandy loam to loamy soil, well-drained.",
+    "pests": "Shoot fly, stem borer, midge"
+  },
+  "bajra": {
+    "description": "Bajra (pearl millet) is a hardy cereal crop.",
+    "climate": "Hot and dry, 25–35°C with 40–50 cm rainfall.",
+    "soil": "Sandy loam to shallow black soil.",
+    "pests": "Shoot fly, stem borer, aphids"
+  },
+  "ragi": {
+    "description": "Ragi (finger millet) is a nutritious cereal crop.",
+    "climate": "Cool to warm, 20–30°C with 50–100 cm rainfall.",
+    "soil": "Red, black, sandy, or loamy soils.",
+    "pests": "Stem borer, aphids, cutworms"
+  },
+  "turmeric": {
+    "description": "Turmeric is a spice crop grown for its rhizomes.",
+    "climate": "Warm and humid, 20–30°C with 150–250 cm rainfall.",
+    "soil": "Well-drained clayey loam or red loamy soil.",
+    "pests": "Rhizome fly, shoot borer, leaf roller"
+  },
+  "cardamom": {
+    "description": "Cardamom is a spice crop known as 'queen of spices'.",
+    "climate": "Cool and humid, 10–35°C with 150–400 cm rainfall.",
+    "soil": "Well-drained lateritic soil.",
+    "pests": "Thrips, shoot borer, aphids"
+  },
+  "black_pepper": {
+    "description": "Black pepper is a spice crop grown on vines.",
+    "climate": "Warm and humid, 15–40°C with 200–300 cm rainfall.",
+    "soil": "Rich in humus, red loam to sandy loam.",
+    "pests": "Pollu beetle, top shoot borer, scale insects"
+  },
+  "coconut": {
+    "description": "Coconut is a tropical plantation crop.",
+    "climate": "Warm and humid, 27°C with 100–250 cm rainfall.",
+    "soil": "Lateritic red, sandy alluvial, well-drained.",
+    "pests": "Rhinoceros beetle, red palm weevil, eriophyid mite"
+  },
+  "banana": {
+    "description": "Banana is a tropical fruit crop grown year-round.",
+    "climate": "Warm and humid, 26–30°C with 100–200 cm rainfall.",
+    "soil": "Fertile, well-drained loamy soil.",
+    "pests": "Banana weevil, nematodes, aphids"
+  }
+
     "tomato": {
       "description": "Tomato is a warm-season crop requiring 70–80 days to harvest.",
       "climate": "Warm, 20–25°C is ideal.",
@@ -11,5 +132,350 @@
       "soil": "Clay loam or loamy soil, well-drained.",
       "pests": "Rusts, aphids, termites"
     }
-  }
+        
+  "apple": {
+    "description": "Apple is a temperate fruit crop grown for its sweet and crisp fruits.",
+    "climate": "Cool, 15–21°C with 100–125 cm rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Codling moth, aphids, apple scab"
+  },
+  "grape": {
+    "description": "Grapes are cultivated for fresh consumption and wine production.",
+    "climate": "Warm, 15–30°C with moderate rainfall.",
+    "soil": "Well-drained sandy loam to clay loam.",
+    "pests": "Grape berry moth, mealybugs, downy mildew"
+  },
+  "mango": {
+    "description": "Mango is a tropical fruit known as the 'king of fruits'.",
+    "climate": "Tropical, 24–30°C with dry periods.",
+    "soil": "Deep, well-drained loamy soil.",
+    "pests": "Mango hopper, fruit fly, powdery mildew"
+  },
+  "papaya": {
+    "description": "Papaya is a tropical fruit crop with high nutritional value.",
+    "climate": "Warm, 22–26°C with moderate rainfall.",
+    "soil": "Well-drained sandy loam soil.",
+    "pests": "Papaya mealybug, fruit fly, anthracnose"
+  },
+  "pineapple": {
+    "description": "Pineapple is a tropical fruit crop grown for its juicy fruits.",
+    "climate": "Warm, 20–30°C with 100–150 cm rainfall.",
+    "soil": "Well-drained sandy loam soil.",
+    "pests": "Mealybugs, scale insects, root rot"
+  },
+  "orange": {
+    "description": "Orange is a citrus fruit rich in vitamin C.",
+    "climate": "Subtropical, 15–30°C with moderate rainfall.",
+    "soil": "Well-drained sandy loam soil.",
+    "pests": "Citrus psyllid, aphids, citrus canker"
+  },
+  "lemon": {
+    "description": "Lemon is a citrus fruit known for its sour taste.",
+    "climate": "Subtropical, 15–30°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil.",
+    "pests": "Citrus leaf miner, aphids, citrus canker"
+  },
+  "guava": {
+    "description": "Guava is a tropical fruit rich in vitamin C.",
+    "climate": "Tropical, 23–28°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil.",
+    "pests": "Fruit fly, mealybugs, wilt"
+  },
+  "pomegranate": {
+    "description": "Pomegranate is a drought-tolerant fruit crop.",
+    "climate": "Semi-arid, 20–30°C with low rainfall.",
+    "soil": "Well-drained loamy soil.",
+    "pests": "Fruit borer, aphids, bacterial blight"
+  },
+  "watermelon": {
+    "description": "Watermelon is a warm-season fruit crop.",
+    "climate": "Warm, 25–30°C with low humidity.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Aphids, fruit fly, powdery mildew"
+  },
+  "muskmelon": {
+    "description": "Muskmelon is a sweet, aromatic fruit.",
+    "climate": "Warm, 25–30°C with low humidity.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Aphids, fruit fly, downy mildew"
+  },
+  "cucumber": {
+    "description": "Cucumber is a warm-season vegetable crop.",
+    "climate": "Warm, 20–30°C with moderate rainfall.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Aphids, whiteflies, powdery mildew"
+  },
+  "pumpkin": {
+    "description": "Pumpkin is a warm-season vegetable crop.",
+    "climate": "Warm, 20–30°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Fruit fly, aphids, powdery mildew"
+  },
+  "bottle_gourd": {
+    "description": "Bottle gourd is a climbing vegetable crop.",
+    "climate": "Warm, 20–30°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Red pumpkin beetle, fruit fly, downy mildew"
+  },
+  "bitter_gourd": {
+    "description": "Bitter gourd is a tropical vegetable crop.",
+    "climate": "Warm, 20–30°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Fruit fly, aphids, powdery mildew"
+  },
+  "okra": {
+    "description": "Okra is a warm-season vegetable crop.",
+    "climate": "Warm, 25–30°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Fruit borer, aphids, whiteflies"
+  },
+  "brinjal": {
+    "description": "Brinjal (eggplant) is a warm-season vegetable crop.",
+    "climate": "Warm, 25–30°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Shoot borer, aphids, whiteflies"
+  },
+  "chili": {
+    "description": "Chili is a spice crop grown for its pungent fruits.",
+    "climate": "Warm, 20–30°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Thrips, aphids, fruit borer"
+  },
+  "onion": {
+    "description": "Onion is a cool-season vegetable crop.",
+    "climate": "Cool, 12–25°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Thrips, onion fly, downy mildew"
+  },
+  "garlic": {
+    "description": "Garlic is a cool-season bulb crop.",
+    "climate": "Cool, 12–25°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Thrips, onion fly, white rot"
+  },
+  "carrot": {
+    "description": "Carrot is a cool-season root vegetable.",
+    "climate": "Cool, 15–20°C with moderate rainfall.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Carrot fly, aphids, root-knot nematode"
+  },
+  "radish": {
+    "description": "Radish is a cool-season root vegetable.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Aphids, flea beetles, root maggots"
+  },
+  "beetroot": {
+    "description": "Beetroot is a cool-season root vegetable.",
+    "climate": "Cool, 15–25°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Leaf miners, aphids, downy mildew"
+  },
+  "spinach": {
+    "description": "Spinach is a cool-season leafy vegetable.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Aphids, leaf miners, downy mildew"
+  },
+  "cabbage": {
+    "description": "Cabbage is a cool-season leafy vegetable.",
+    "climate": "Cool, 15–20°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Cabbage worm, aphids, black rot"
+  },
+  "cauliflower": {
+    "description": "Cauliflower is a cool-season vegetable crop.",
+    "climate": "Cool, 15–20°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Cabbage worm, aphids, downy mildew"
+  },
+  "lettuce": {
+    "description": "Lettuce is a cool-season leafy vegetable.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Aphids, leaf miners, downy mildew"
+  },
+  "pea": {
+    "description": "Pea is a cool-season legume crop.",
+    "climate": "Cool, 10–25°C with moderate rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Aphids, pea weevil, powdery mildew"
+  },
+  "chickpea": {
+    "description": "Chickpea is a cool-season legume crop.",
+    "climate": "Cool, 10–25°C with low rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Pod borer, aphids, wilt"
+  },
+  "lentil": {
+    "description": "Lentil is a cool-season legume crop.",
+    "climate": "Cool, 10–25°C with low rainfall.",
+    "soil": "Loamy soil, well-drained.",
+    "pests": "Aphids, pod borer, rust"
+  },
+  "cowpea": {
+    "description": "Cowpea is a warm-season legume crop.",
+    "climate": "Warm, 20–30°C with moderate rainfall.",
+    "soil": "Sandy loam, well-drained.",
+    "pests": "Aphids, pod borer, leaf spot"
   
+{
+  "asparagus": {
+    "description": "Asparagus is a perennial vegetable crop known for its tender shoots.",
+    "climate": "Temperate, 15–25°C with full sun.",
+    "soil": "Well-drained sandy loam, pH 6.5–7.5.",
+    "pests": "Asparagus beetle, cutworms, aphids"
+  },
+  "broccoli": {
+    "description": "Broccoli is a cool-season vegetable rich in vitamins.",
+    "climate": "Cool, 15–20°C with moderate rainfall.",
+    "soil": "Fertile loamy soil, pH 6.0–7.0.",
+    "pests": "Cabbage worms, aphids, flea beetles"
+  },
+  "brussels_sprouts": {
+    "description": "Brussels sprouts are a cool-season crop producing small cabbage-like heads.",
+    "climate": "Cool, 15–20°C with consistent moisture.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage loopers, aphids, cutworms"
+  },
+  "cabbage": {
+    "description": "Cabbage is a leafy vegetable grown for its dense heads.",
+    "climate": "Cool, 15–20°C with moderate rainfall.",
+    "soil": "Fertile loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage worms, aphids, black rot"
+  },
+  "cauliflower": {
+    "description": "Cauliflower is a cool-season crop grown for its edible white curd.",
+    "climate": "Cool, 15–20°C with consistent moisture.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Cabbage loopers, aphids, downy mildew"
+  },
+  "celery": {
+    "description": "Celery is a cool-season crop valued for its crisp stalks.",
+    "climate": "Cool, 15–21°C with high humidity.",
+    "soil": "Rich, well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Aphids, leaf miners, celery worms"
+  },
+  "collard_greens": {
+    "description": "Collard greens are leafy vegetables popular in southern cuisines.",
+    "climate": "Cool to warm, 15–25°C with full sun.",
+    "soil": "Fertile loamy soil, pH 6.0–6.8.",
+    "pests": "Cabbage loopers, aphids, flea beetles"
+  },
+  "endive": {
+    "description": "Endive is a leafy green with a slightly bitter taste.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Aphids, slugs, leaf miners"
+  },
+  "kale": {
+    "description": "Kale is a nutrient-rich leafy green vegetable.",
+    "climate": "Cool, 10–20°C with full sun.",
+    "soil": "Fertile loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage worms, aphids, flea beetles"
+  },
+  "leek": {
+    "description": "Leek is a mild-flavored allium grown for its edible stalk.",
+    "climate": "Cool, 12–20°C with consistent moisture.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Onion thrips, leek moth, rust"
+  },
+  "mustard_greens": {
+    "description": "Mustard greens are spicy leafy vegetables used in salads and cooking.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Aphids, flea beetles, leaf miners"
+  },
+  "parsnip": {
+    "description": "Parsnip is a root vegetable with a sweet, nutty flavor.",
+    "climate": "Cool, 10–20°C with full sun.",
+    "soil": "Deep, well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Carrot fly, aphids, root-knot nematodes"
+  },
+  "rutabaga": {
+    "description": "Rutabaga is a root vegetable, a cross between cabbage and turnip.",
+    "climate": "Cool, 10–20°C with consistent moisture.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage root maggot, aphids, flea beetles"
+  },
+  "swiss_chard": {
+    "description": "Swiss chard is a leafy green known for its colorful stems.",
+    "climate": "Cool to warm, 15–25°C with full sun.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Leaf miners, aphids, slugs"
+  },
+  "turnip": {
+    "description": "Turnip is a root vegetable grown for its edible roots and greens.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Root maggots, aphids, flea beetles"
+  },
+  "artichoke": {
+    "description": "Artichoke is a perennial thistle grown for its edible flower buds.",
+    "climate": "Mild, 15–20°C with full sun.",
+    "soil": "Well-drained sandy loam, pH 6.5–7.5.",
+    "pests": "Aphids, snails, slugs"
+  },
+  "arugula": {
+    "description": "Arugula is a fast-growing leafy green with a peppery flavor.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Flea beetles, aphids, slugs"
+  },
+  "bok_choy": {
+    "description": "Bok choy is a type of Chinese cabbage with crisp stalks.",
+    "climate": "Cool, 10–20°C with consistent moisture.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage worms, aphids, flea beetles"
+  },
+  "chard": {
+    "description": "Chard is a leafy green vegetable with colorful stems.",
+    "climate": "Cool to warm, 15–25°C with full sun.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Leaf miners, aphids, slugs"
+  },
+  "chicory": {
+    "description": "Chicory is a leafy vegetable with a slightly bitter taste.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Aphids, slugs, leaf miners"
+  },
+  "fennel": {
+    "description": "Fennel is a flavorful herb with edible bulbs and fronds.",
+    "climate": "Cool to warm, 15–25°C with full sun.",
+    "soil": "Well-drained sandy loam, pH 6.0–7.0.",
+    "pests": "Aphids, whiteflies, root rot"
+  },
+  "kohlrabi": {
+    "description": "Kohlrabi is a cool-season vegetable with a bulbous stem.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage worms, aphids, flea beetles"
+  },
+  "mizuna": {
+    "description": "Mizuna is a Japanese mustard green with a mild flavor.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Aphids, flea beetles, slugs"
+  },
+  "pak_choi": {
+    "description": "Pak choi is a type of Chinese cabbage with tender leaves.",
+    "climate": "Cool, 10–20°C with consistent moisture.",
+    "soil": "Fertile, well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Cabbage worms, aphids, flea beetles"
+  },
+  "radicchio": {
+    "description": "Radicchio is a leafy vegetable with a bitter taste and red leaves.",
+    "climate": "Cool, 10–20°C with moderate rainfall.",
+    "soil": "Well-drained loamy soil, pH 6.0–7.5.",
+    "pests": "Aphids, slugs, leaf miners"
+  },
+  "salsify": {
+    "description": "Salsify is a root vegetable with a flavor resembling oysters.",
+    "climate": "Cool, 10–20°C with full sun.",
+    "soil": "Deep, well-drained loamy soil, pH 6.0–7.0.",
+    "pests": "Carrot fly, aphids, root-knot nematodes"
+  },
+ 
+  }
+}  
