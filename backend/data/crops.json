@@ -47,12 +47,6 @@
     "soil": "Well-drained forest loam soil.",
     "pests": "Coffee borer beetle, mealybugs"
   },
-  "groundnut": {
-    "description": "Groundnut is an oilseed crop grown in Kharif season.",
-    "climate": "Warm, 20–30°C with 50–75 cm rainfall.",
-    "soil": "Sandy loam, well-drained.",
-    "pests": "Leaf miner, aphids, white grub"
-  },
   "soybean": {
     "description": "Soybean is a major oilseed and protein-rich crop.",
     "climate": "Warm, 20–30°C with 60–100 cm rainfall.",
@@ -131,8 +125,7 @@
       "climate": "Cool, 10–15°C during growth.",
       "soil": "Clay loam or loamy soil, well-drained.",
       "pests": "Rusts, aphids, termites"
-    },
-        
+    }, 
   "apple": {
     "description": "Apple is a temperate fruit crop grown for its sweet and crisp fruits.",
     "climate": "Cool, 15–21°C with 100–125 cm rainfall.",
@@ -338,12 +331,7 @@
     "soil": "Fertile loamy soil, pH 6.0–7.5.",
     "pests": "Cabbage worms, aphids, black rot"
   },
-  "cauliflower": {
-    "description": "Cauliflower is a cool-season crop grown for its edible white curd.",
-    "climate": "Cool, 15–20°C with consistent moisture.",
-    "soil": "Well-drained loamy soil, pH 6.0–7.0.",
-    "pests": "Cabbage loopers, aphids, downy mildew"
-  },
+ 
   "celery": {
     "description": "Celery is a cool-season crop valued for its crisp stalks.",
     "climate": "Cool, 15–21°C with high humidity.",

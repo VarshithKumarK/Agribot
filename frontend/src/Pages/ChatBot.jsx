@@ -1,16 +1,20 @@
 import React, { useState, useRef, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../context/AuthContext";
+import { FaMicrophone, FaPaperPlane } from "react-icons/fa";
+
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
   const { user } = useContext(AuthContext);
+
   const handleSendText = async (query) => {
     const userMsg = { from: "user", text: query };
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
+
     try {
       const res = await axios.post("http://localhost:5000/api/voice/query", {
         query,
@@ -20,6 +24,7 @@ const ChatBot = () => {
       window.speechSynthesis.speak(
         new SpeechSynthesisUtterance(res.data.response)
       );
+
       if (user) {
         await axios.post(
           "http://localhost:5000/api/query/save",
@@ -94,23 +99,36 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="min-h-screen  bg-green-100 p-4 flex flex-col items-center font-sans">
-      <h1 className="text-3xl font-bold mt-15 text-green-800 mb-4">
+    <div className="min-h-screen bg-green-100 p-4 flex flex-col items-center font-sans">
+      <h1 className="text-3xl mt-15 font-bold text-green-800 mb-4">
         AgriBot - Voice & Text Assistant
       </h1>
 
-      <div className="w-full max-w-xl bg-white rounded-xl shadow-lg p-4 flex flex-col gap-4">
-        <div className="h-96 overflow-y-auto border border-green-200 rounded p-2 bg-gray-50">
+      <div className="w-full max-w-xl bg-white bg-opacity-90 rounded-xl shadow-lg p-4 flex flex-col gap-4">
+        <div
+          className="h-96 overflow-y-auto border border-green-200 rounded p-2 bg-gray-50"
+          style={{
+            backgroundImage: "url('/download.jpeg')",
+            backgroundRepeat: "repeat",
+            backgroundSize: "contain",
+          }}
+        >
           {messages.map((msg, idx) => (
             <div
               key={idx}
-              className={`my-2 p-2 rounded-lg max-w-[75%] text-sm whitespace-pre-line ${
-                msg.from === "user"
-                  ? "bg-green-200 self-end"
-                  : "bg-white self-start border border-green-300"
+              className={`flex ${
+                msg.from === "user" ? "justify-end" : "justify-start"
               }`}
             >
-              {msg.text}
+              <div
+                className={`my-1 px-4 py-2 rounded-2xl max-w-[75%] text-sm whitespace-pre-line shadow ${
+                  msg.from === "user"
+                    ? "bg-green-200 text-right"
+                    : "bg-white border border-green-300"
+                }`}
+              >
+                {msg.text}
+              </div>
             </div>
           ))}
         </div>
@@ -122,24 +140,26 @@ const ChatBot = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSendText(input)}
-            className="flex-1 border border-green-300 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-green-500"
+            className="flex-1 border border-green-300 rounded-full px-4 py-2 outline-none focus:ring-2 focus:ring-green-500 bg-white"
           />
+
           <button
             onClick={() => handleSendText(input)}
-            className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+            className="bg-gradient-to-br from-green-400 to-lime-500 text-white px-4 py-2 rounded-full hover:from-green-500 hover:to-lime-600 shadow-md transition flex items-center justify-center"
           >
-            Send
+            <FaPaperPlane className="text-lg" />
           </button>
+
           <button
             onClick={handleVoiceInput}
-            className={`w-10 h-10 flex items-center justify-center rounded-full transition duration-200 ${
+            className={`w-10 h-10 flex items-center justify-center rounded-full text-white shadow-lg transition duration-200 ${
               listening
                 ? "bg-red-500 animate-pulse"
-                : "bg-green-500 hover:bg-green-600"
+                : "bg-green-600 hover:bg-green-700"
             }`}
             title={listening ? "Listening..." : "Start voice input"}
           >
-            🎤
+            <FaMicrophone />
           </button>
         </div>
       </div>

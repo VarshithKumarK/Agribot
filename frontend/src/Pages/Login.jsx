@@ -46,7 +46,7 @@ const Login = () => {
 
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-br from-green-200 via-green-300 to-yellow-500">
-      <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-xl w-full max-w-md text-green-900 border border-green-300">
+      <div className="bg-white bg-opacity-90 p-8 rounded-2xl shadow-xl w-full max-w-md text-green-900 border border-green-300">
         <h2 className="text-3xl font-bold text-center mb-6 ">
           🌾 AgriBot Login
         </h2>

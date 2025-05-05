@@ -34,7 +34,7 @@ const getCropInfo = (cropName) => {
   const filePath = path.resolve("data/crops.json");
   const crops = JSON.parse(fs.readFileSync(filePath));
   const crop = crops[cropName];
-
+    //console.log(crop)
   if (!crop) return `Sorry, I don't have information about ${cropName}.`;
 
   return `${cropName.toUpperCase()}:\n${crop.description}\nClimate: ${
@@ -69,9 +69,9 @@ export const handleWebhook = async (req, res) => {
   console.log(parameters);
 
   if (intent === "get_crop_info") {
-    const cropName = parameters["crop-name"]?.toLowerCase();
+    const cropName = parameters["crop-name"]?.toLowerCase().trim();
     const response = getCropInfo(cropName);
-    console.log("Intent:", intent);
+    // console.log("Intent:", intent);
     // console.log("Parameters:", parameters);
     // console.log("Crop name:", parameters["crop-name"]); // for crop
 

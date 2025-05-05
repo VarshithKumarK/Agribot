@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { FaUserAlt, FaEnvelope } from "react-icons/fa";
+import { FaUserAlt, FaEnvelope, FaUpload } from "react-icons/fa";
 
 const Profile = () => {
   const { user, setUser } = useContext(AuthContext);
@@ -22,9 +22,7 @@ const Profile = () => {
   }, [selectedFile]);
 
   const handleUpload = async () => {
-    if (!selectedFile) {
-      return toast.error("No file selected");
-    }
+    if (!selectedFile) return toast.error("No file selected");
     const formData = new FormData();
     formData.append("profilePic", selectedFile);
 
@@ -40,6 +38,7 @@ const Profile = () => {
       setUser(res.data);
       toast.success("Profile picture updated!");
       setSelectedFile(null);
+      setPreview("");
     } catch (error) {
       toast.error("Failed to upload profile picture");
     }
@@ -54,60 +53,61 @@ const Profile = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-yellow-100 to-green-100 text-green-900 px-4 py-12">
-      <div className="flex flex-col items-center mt-15">
-        <h1 className="text-4xl font-extrabold text-green-800 mb-10">
-          🌾 Welcome, Farmer!
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-yellow-100 to-green-50 flex items-center justify-center px-4 py-16">
+      <div className="bg-white/60 backdrop-blur-lg border border-green-200 rounded-3xl shadow-2xl p-10 w-full max-w-xl text-center space-y-8">
+        <h1 className="text-4xl font-extrabold text-green-800 tracking-wide">
+          🌿 Welcome, Farmer!
         </h1>
 
-        <div className="relative">
+        <div className="flex justify-center">
           {user?.profilePic || preview ? (
             <img
               src={preview || user.profilePic}
               alt="Profile"
-              className="w-40 h-40 rounded-full border-4 border-green-600 object-cover shadow-xl transition-transform hover:scale-105"
+              className="w-36 h-36 rounded-full border-4 border-green-500 object-cover shadow-md hover:shadow-green-300 transition duration-300 hover:scale-105"
             />
           ) : (
-            <div className="w-40 h-40 rounded-full bg-green-200 flex items-center justify-center text-green-600 text-sm border-2 border-green-400">
+            <div className="w-36 h-36 rounded-full bg-green-200 flex items-center justify-center text-green-700 text-base border-2 border-green-400">
               No Photo
             </div>
           )}
         </div>
 
-        <div className="mt-6 text-center space-y-2">
-          <div className="flex items-center justify-center gap-2 text-xl font-semibold text-green-700">
-            <FaUserAlt className="text-green-600" />
+        <div className="space-y-2 text-green-800">
+          <div className="flex items-center justify-center gap-2 text-xl font-medium">
+            <FaUserAlt />
             <span>{user?.username || "No username"}</span>
           </div>
-
-          <div className="flex items-center justify-center gap-2 text-md text-green-600">
-            <FaEnvelope className="text-green-500" />
+          <div className="flex items-center justify-center gap-2 text-md">
+            <FaEnvelope />
             <span>{user?.email}</span>
           </div>
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="space-y-4 ">
           <input
             type="file"
             accept="image/*"
             onChange={handleFileChange}
-            className="block mx-auto text-sm text-green-700 mb-4"
+            className="text-sm text-green-800 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-200 file:text-green-700 hover:file:bg-green-300"
           />
 
           {preview && (
             <img
               src={preview}
               alt="Preview"
-              className="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-green-400 shadow"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-2 border-green-400 shadow-sm"
             />
           )}
-
-          <button
-            onClick={handleUpload}
-            className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full transition shadow-md"
-          >
-            {user?.profilePic ? "Update Photo" : "Upload Photo"}
-          </button>
+          <div className="flex justify-center">
+            <button
+              onClick={handleUpload}
+              className="flex items-center justify-center gap-2 bg-green-600  hover:bg-green-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 shadow-lg hover:shadow-green-400"
+            >
+              <FaUpload />
+              {user?.profilePic ? "Update Photo" : "Upload Photo"}
+            </button>
+          </div>
         </div>
       </div>
     </div>

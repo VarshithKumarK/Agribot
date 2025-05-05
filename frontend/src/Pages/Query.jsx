@@ -55,74 +55,82 @@ const Query = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-yellow-100 p-6">
-      <h1 className="text-3xl font-bold mt-15 text-green-800 mb-6 text-center">
+      <h1 className="text-4xl font-extrabold text-center text-green-800 mb-10 mt-16 tracking-wide">
         🌾 Your Farm Queries
       </h1>
 
       {queries.length > 0 ? (
-        <div className="max-w-4xl mx-auto space-y-4">
-          <div className="flex justify-end mb-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex justify-end mb-8">
             <button
               onClick={deleteAll}
-              className="bg-gradient-to-r from-red-500 to-red-700 hover:brightness-110 text-white px-6 py-2 rounded-full shadow-md transition-all duration-300"
+              className="bg-gradient-to-tr from-red-400 to-red-400 hover:from-red-500 hover:to-red-700 text-white font-semibold px-6 py-2 rounded-full shadow-lg transition duration-300 hover:scale-105 flex items-center gap-2"
             >
-              🗑 Delete All Queries
+              🗑 Delete All
             </button>
           </div>
 
-          {queries.map((query) => (
-            <div
-              key={query._id}
-              className="bg-white shadow-xl rounded-lg p-4 border-l-4 border-green-600 transition-transform hover:scale-[1.01]"
-            >
-              <div
-                className="flex justify-between items-center cursor-pointer"
-                onClick={() => toggleExpand(query._id)}
-              >
-                <div>
-                  <p className="text-lg font-bold text-green-800">
-                    {query.question || "Untitled Query"}
-                  </p>
-                  {/* <p className="text-sm text-gray-600">Session ID: {query.sessionId || "N/A"}</p> */}
-                </div>
-                <div className="flex items-center gap-4">
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      deleteQuery(query._id);
-                    }}
-                    className="text-red-500 hover:text-red-700 transition"
+          <div className="space-y-6">
+            {queries.map((query, index) => {
+              const isLeft = index % 2 === 0;
+              const alignment = isLeft ? "justify-start" : "justify-end";
+              const bubbleColor = "bg-white/40 backdrop-blur-md";
+              const textAlign = isLeft ? "text-left" : "text-right";
+              return (
+                <div key={query._id} className={`flex ${alignment}`}>
+                  <div
+                    className={`relative max-w-[90%] sm:max-w-[75%] md:max-w-[60%] p-6 rounded-2xl border border-green-300 shadow-2xl transition hover:shadow-green-400/60 hover:scale-[1.02] ${bubbleColor}`}
                   >
-                    <FaTrash size={18} />
-                  </button>
-                  {expandedId === query._id ? (
-                    <FaChevronUp className="text-green-600" />
-                  ) : (
-                    <FaChevronDown className="text-green-600" />
-                  )}
-                </div>
-              </div>
+                    <div
+                      className="flex justify-between items-center cursor-pointer"
+                      onClick={() => toggleExpand(query._id)}
+                    >
+                      <div className={`w-full ${textAlign}`}>
+                        <p className="text-lg font-bold text-green-900 tracking-wide">
+                          {query.question || "Untitled Query"}
+                        </p>
+                      </div>
+                      <div className="ml-3 flex items-center gap-3">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            deleteQuery(query._id);
+                          }}
+                          className="bg-red-100 hover:bg-red-200 text-red-600 p-2 rounded-full transition"
+                          title="Delete this query"
+                        >
+                          <FaTrash />
+                        </button>
+                        {expandedId === query._id ? (
+                          <FaChevronUp className="text-green-700" />
+                        ) : (
+                          <FaChevronDown className="text-green-700" />
+                        )}
+                      </div>
+                    </div>
 
-              {expandedId === query._id && (
-                <div className="mt-4 bg-green-50 p-4 rounded-md border border-green-300 text-sm text-green-900 space-y-1">
-                  <p>
-                    <strong>🌱 Question:</strong> {query.question}
-                  </p>
-                  <p>
-                    <strong>🎯 Intent:</strong> {query.intent || "N/A"}
-                  </p>
-                  <p>
-                    <strong>💬 Response:</strong> {query.response || "N/A"}
-                  </p>
-                  {/* <p><strong>🧾 Session ID:</strong> {query.sessionId || "N/A"}</p> */}
-                  <p>
-                    <strong>📅 Date:</strong>{" "}
-                    {moment(query.createdAt).format("MMMM Do YYYY, h:mm A")}
-                  </p>
+                    {expandedId === query._id && (
+                      <div className={`mt-4 text-sm ${textAlign} text-green-900 space-y-2`}>
+                        <p>
+                          <strong>🌱 Question:</strong> {query.question}
+                        </p>
+                        <p>
+                          <strong>🎯 Intent:</strong> {query.intent || "N/A"}
+                        </p>
+                        <p>
+                          <strong>💬 Response:</strong> {query.response || "N/A"}
+                        </p>
+                        <p>
+                          <strong>📅 Date:</strong>{" "}
+                          {moment(query.createdAt).format("MMMM Do YYYY, h:mm A")}
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              )}
-            </div>
-          ))}
+              );
+            })}
+          </div>
         </div>
       ) : (
         <p className="text-center text-gray-600 mt-10 text-lg">

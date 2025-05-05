@@ -6,12 +6,12 @@ const Home = () => {
     <div className="bg-green-50 min-h-screen font-sans">
       {/* Hero + About Section Combined */}
       <section className="relative bg-cover bg-center h-screen">
-        <div className="absolute inset-0 bg-green-300 bg-opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8DC] to-green-400 bg-opacity-60"></div>
         <div className="relative container mx-auto px-6 py-24 text-white flex flex-col justify-center items-center h-full text-center">
-          <h1 className="text-5xl  font-extrabold leading-tight max-w-4xl">
+          <h1 className="text-5xl text-green-800 font-extrabold leading-tight max-w-4xl">
             Growing Smarter with AgriBot AI
           </h1>
-          <p className="mt-6 text-lg max-w-3xl">
+          <p className="mt-6 text-lg max-w-3xl text-gray-600">
             AgriBot AI combines data, machine learning, and precision tools to
             help farmers make smarter decisions. From predicting climate impacts
             to tracking market prices and monitoring crop health — AI is

@@ -21,32 +21,35 @@ const Navbar = () => {
 
         <ul className="hidden lg:flex gap-6 items-center text-xl text-green-700  font-medium">
           <li>
-            <Link to="/" className="hover:text-blue-300 transition">
+            <Link to="/" className="hover:text-[#FF7F50]  transition">
               Home
             </Link>
           </li>
 
           <li>
-            <Link to="/chatbot" className="hover:text-blue-300 transition">
+            <Link to="/chatbot" className="hover:text-[#FF7F50] transition">
               AgriBot
             </Link>
           </li>
           {user ? (
             <>
               <li>
-                <Link to="/query" className="hover:text-blue-300 transition">
+                <Link to="/query" className="hover:text-[#FF7F50]  transition">
                   My Queries
                 </Link>
               </li>
               <li>
-                <Link to="/profile" className="hover:text-blue-300 transition">
+                <Link
+                  to="/profile"
+                  className="hover:text-[#FF7F50]  transition"
+                >
                   Profile
                 </Link>
               </li>
               <li>
                 <button
                   onClick={logout}
-                  className="px-5 py-2 rounded-full bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold shadow-lg transition-all hover:opacity-80"
+                  className="px-5 py-2 rounded-full bg-gradient-to-r from-red-400 to-orange-400 text-white font-semibold shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:from-orange-500 hover:to-red-600"
                 >
                   Logout
                 </button>
@@ -57,7 +60,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/register"
-                  className="px-5 py-2 rounded-full bg-gradient-to-r from-green-400 to-teal-500 text-white font-semibold shadow-lg transition-all hover:opacity-80"
+                  className="px-5 py-2 rounded-full bg-gradient-to-r from-lime-500 to-green-600 text-white font-semibold shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:from-green-600 hover:to-lime-500"
                 >
                   Register
                 </Link>
@@ -65,7 +68,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/login"
-                  className="px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-lg transition-all hover:opacity-80"
+                  className="px-5 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-orange-600 text-white font-semibold shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:from-orange-600 hover:to-yellow-500"
                 >
                   Login
                 </Link>
@@ -90,7 +93,7 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="hover:text-blue-300 transition "
+            className="hover:text-[#FF7F50]  transition "
             onClick={() => setMenuOpen(false)}
           >
             Home
@@ -98,7 +101,7 @@ const Navbar = () => {
 
           <Link
             to="/chatbot"
-            className="hover:text-blue-300 transition "
+            className="hover:text-[#FF7F50]  transition "
             onClick={() => setMenuOpen(false)}
           >
             AgriBot
@@ -108,7 +111,7 @@ const Navbar = () => {
             <>
               <Link
                 to="/query"
-                className="hover:text-blue-300 transition "
+                className="hover:text-[#FF7F50]  transition "
                 onClick={() => setMenuOpen(false)}
               >
                 My Queries
@@ -121,7 +124,7 @@ const Navbar = () => {
                   logout();
                   setMenuOpen(false);
                 }}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-pink-500"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-red-400 to-orange-400 text-white shadow-md transition-all duration-300 transform hover:scale-105 hover:from-orange-500 hover:to-red-600"
               >
                 Logout
               </button>
@@ -131,14 +134,15 @@ const Navbar = () => {
               <Link
                 to="/register"
                 onClick={() => setMenuOpen(false)}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-green-400 to-teal-500"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-lime-500 to-green-600 text-white shadow-md transition-all duration-300 transform hover:scale-105 hover:from-green-600 hover:to-lime-500"
               >
                 Register
               </Link>
+
               <Link
                 to="/login"
                 onClick={() => setMenuOpen(false)}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-orange-600 text-white shadow-md transition-all duration-300 transform hover:scale-105 hover:from-orange-600 hover:to-yellow-500"
               >
                 Login
               </Link>
