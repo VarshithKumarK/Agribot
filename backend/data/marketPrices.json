@@ -14,5 +14,179 @@
   "onion": {
     "price": "₹900 per quintal",
     "market": "Mumbai Market"
+  },
+
+  "jowar": {
+    "price": "₹3,180 per quintal",
+    "market": "Ahmednagar Market"
+  },
+  "bajra": {
+    "price": "₹2,500 per quintal",
+    "market": "Jaipur Market"
+  },
+  "maize": {
+    "price": "₹2,090 per quintal",
+    "market": "Ludhiana Market"
+  },
+  "ragi": {
+    "price": "₹3,846 per quintal",
+    "market": "Bangalore Market"
+  },
+  "barley": {
+    "price": "₹1,850 per quintal",
+    "market": "Kanpur Market"
+  },
+  "gram": {
+    "price": "₹5,440 per quintal",
+    "market": "Indore Market"
+  },
+  "moong": {
+    "price": "₹8,558 per quintal",
+    "market": "Akola Market"
+  },
+  "urad": {
+    "price": "₹6,950 per quintal",
+    "market": "Nagpur Market"
+  },
+  "tur": {
+    "price": "₹7,000 per quintal",
+    "market": "Hyderabad Market"
+  },
+  "lentil": {
+    "price": "₹6,425 per quintal",
+    "market": "Lucknow Market"
+  },
+  "groundnut": {
+    "price": "₹6,377 per quintal",
+    "market": "Rajkot Market"
+  },
+  "mustard": {
+    "price": "₹5,650 per quintal",
+    "market": "Alwar Market"
+  },
+  "safflower": {
+    "price": "₹5,800 per quintal",
+    "market": "Aurangabad Market"
+  },
+  "soybean": {
+    "price": "₹4,600 per quintal",
+    "market": "Indore Market"
+  },
+  "sesamum": {
+    "price": "₹8,635 per quintal",
+    "market": "Surat Market"
+  },
+  "nigerseed": {
+    "price": "₹7,734 per quintal",
+    "market": "Raipur Market"
+  },
+  "cotton_medium": {
+    "price": "₹6,620 per quintal",
+    "market": "Coimbatore Market"
+  },
+  "cotton_long": {
+    "price": "₹7,020 per quintal",
+    "market": "Mumbai Market"
+  },
+  "sugarcane": {
+    "price": "₹315 per quintal",
+    "market": "Meerut Market"
+  },
+  "potato": {
+    "price": "₹1,000 per quintal",
+    "market": "Agra Market"
+  },
+
+  "brinjal": {
+    "price": "₹1,400 per quintal",
+    "market": "Kolkata Market"
+  },
+  "cabbage": {
+    "price": "₹900 per quintal",
+    "market": "Pune Market"
+  },
+  "cauliflower": {
+    "price": "₹1,300 per quintal",
+    "market": "Delhi Market"
+  },
+  "carrot": {
+    "price": "₹1,600 per quintal",
+    "market": "Shimla Market"
+  },
+  "chilli_dry": {
+    "price": "₹17,000 per quintal",
+    "market": "Guntur Market"
+  },
+  "chilli_green": {
+    "price": "₹1,800 per quintal",
+    "market": "Warangal Market"
+  },
+  "garlic": {
+    "price": "₹6,000 per quintal",
+    "market": "Indore Market"
+  },
+  "ginger": {
+    "price": "₹4,800 per quintal",
+    "market": "Wayanad Market"
+  },
+  "banana": {
+    "price": "₹1,100 per quintal",
+    "market": "Trichy Market"
+  },
+  "mango": {
+    "price": "₹3,500 per quintal",
+    "market": "Ratnagiri Market"
+  },
+  "guava": {
+    "price": "₹1,800 per quintal",
+    "market": "Allahabad Market"
+  },
+  "apple": {
+    "price": "₹5,000 per quintal",
+    "market": "Shimla Market"
+  },
+  "orange": {
+    "price": "₹2,000 per quintal",
+    "market": "Nagpur Market"
+  },
+  "pomegranate": {
+    "price": "₹4,000 per quintal",
+    "market": "Solapur Market"
+  },
+  "grapes": {
+    "price": "₹3,500 per quintal",
+    "market": "Nashik Market"
+  },
+  "lemon": {
+    "price": "₹2,300 per quintal",
+    "market": "Hyderabad Market"
+  },
+  "papaya": {
+    "price": "₹1,500 per quintal",
+    "market": "Madurai Market"
+  },
+  "watermelon": {
+    "price": "₹900 per quintal",
+    "market": "Ahmedabad Market"
+  },
+  "muskmelon": {
+    "price": "₹1,000 per quintal",
+    "market": "Chandigarh Market"
+  },
+  "coriander": {
+    "price": "₹7,000 per quintal",
+    "market": "Kota Market"
+  },
+  "cumin": {
+    "price": "₹20,000 per quintal",
+    "market": "Unjha Market"
+  },
+  "fenugreek": {
+    "price": "₹5,800 per quintal",
+    "market": "Nagaur Market"
+  },
+  "fennel": {
+    "price": "₹12,000 per quintal",
+    "market": "Sikar Market"
   }
 }

@@ -12,11 +12,11 @@ const app = express();
 
 app.use(cookieParser());
 app.use(express.json());
+// const allowedOrigin = 'http://192.168.139.50:5173';
 app.use(express.urlencoded({ extended: true }));
-app.use("/uploads", express.static("uploads"));
 app.use(
   cors({
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "http://localhost:5173",
     credentials: true, // Allow credentials (cookies)
   })
 );
