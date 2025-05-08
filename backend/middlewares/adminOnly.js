@@ -2,6 +2,7 @@ import User from "../models/User.js";
 
 export const adminOnly = async (req, res, next) => {
   try {
+   
     if (!req.user) {
       return res
         .status(401)

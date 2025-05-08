@@ -34,7 +34,7 @@ const getCropInfo = (cropName) => {
   const filePath = path.resolve("data/crops.json");
   const crops = JSON.parse(fs.readFileSync(filePath));
   const crop = crops[cropName];
-    //console.log(crop)
+  //console.log(crop)
   if (!crop) return `Sorry, I don't have information about ${cropName}.`;
 
   return `${cropName.toUpperCase()}:\n${crop.description}\nClimate: ${
@@ -97,4 +97,26 @@ export const handleWebhook = async (req, res) => {
   return res.json({
     fulfillmentText: "Sorry, I couldn’t understand your request.",
   });
+};
+export const webhook = async (req, res) => {
+  const query = req.body.queryResult.queryText;
+
+  try {
+    const response = await axios.post("http://localhost:11434/api/generate", {
+      model: "ayansh03/agribot",
+      prompt: query,
+      stream: false,
+    });
+     
+    const agribotReply = response.data.response;
+
+    return res.json({
+      fulfillmentText: agribotReply,
+    });
+  } catch (error) {
+    console.error("Error from agribotto:", error.message);
+    return res.json({
+      fulfillmentText: "Sorry couldnot fetch",
+    });
+  }
 };
