@@ -113,7 +113,7 @@ export default function SchemesPage() {
           ))}
         </select>
 
-        {user.role === "admin" && (
+        {user?.role === "admin" && (
           <div className="flex flex-col gap-2 w-full md:w-1/2">
             <input
               className="p-2 border rounded-md"
@@ -225,7 +225,7 @@ export default function SchemesPage() {
               >
                 Apply Now
               </a>
-              {user.role === "admin" && (
+              {user?.role === "admin" && (
                 <button
                   onClick={() => handleDelete(scheme._id)}
                   className="text-red-600 mt-2 flex items-center"
